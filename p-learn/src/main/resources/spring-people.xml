@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+       http://www.w3school.com.cn/schema/people http://www.w3school.com.cn/schema/people.xsd"
+       xmlns:cutesource="http://www.w3school.com.cn/schema/people"
+       default-autowire="byName">
+
+    <bean id="testString" class="java.lang.String">
+        <constructor-arg value="asdasdasdasd"/>
+    </bean>
+
+    <cutesource:people id="people1" name="qwx" age="27"/>
+
+</beans>
