@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:beans="http://www.springframework.org/schema/beans"
+           targetNamespace="http://www.w3school.com.cn/schema/people"
+           xmlns="http://www.w3school.com.cn/schema/people"
+           elementFormDefault="qualified">
+
+    <xs:import namespace="http://www.springframework.org/schema/beans" />
+
+    <xs:element name="people">
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="beans:identifiedType">
+                    <xs:attribute name="name" type="xs:string"/>
+                    <xs:attribute name="age" type="xs:int"/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
