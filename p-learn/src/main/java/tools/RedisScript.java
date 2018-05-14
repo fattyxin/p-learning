@@ -9,10 +9,10 @@ import java.util.List;
 public class
         RedisScript {
     public static void main(String[] args) {
-        String masterIp = "172.26.52.73";
+        String masterIp = "127.0.0.1";
         int masterPortStart = 6701;
         int masterPortEnd = 6702;
-        String slaveIp = "172.26.52.75";
+        String slaveIp = "127.0.0.2";
         int slavePortStart = 6701;
         int slavePortEnd = 6702;
 
