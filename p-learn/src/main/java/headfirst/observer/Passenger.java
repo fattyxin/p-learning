@@ -3,9 +3,9 @@ package headfirst.observer;
 /**
  * passenger one goto T65
  */
-public class PassengerOne implements Observer{
+public class Passenger implements Observer{
    private String trainNum2Take;
-    public PassengerOne(Subject subject){
+    public Passenger(Subject subject){
         subject.addObserver(this);
     }
 

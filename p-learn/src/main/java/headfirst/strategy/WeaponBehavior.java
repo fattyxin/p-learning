@@ -1,4 +1,4 @@
-package headfirst.strategyPattern;
+package headfirst.strategy;
 
 public interface WeaponBehavior {
 }
