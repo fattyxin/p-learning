@@ -19,7 +19,9 @@ public class SimpleFactoryMain {
 
         Cake cake1 = cakeStore.makeCakeCommon(CakeTypeEnum.Cream_Cake.getType());
         Assert.isTrue(cake1 instanceof CreamCake,"cake1 is not creamCake");
-        Cake cake2 = cakeStore.makeCakeFactory(CakeTypeEnum.Fruit_Cake.getType());
+
+        CakeStore cakeStore2 = new CakeStore(new SimpleCakeFactory());
+        Cake cake2 = cakeStore2.makeCakeFactory(CakeTypeEnum.Fruit_Cake.getType());
         Assert.isTrue(cake2 instanceof FruitCake,"cake1 is not fruitCake");
 
     }

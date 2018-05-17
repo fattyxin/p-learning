@@ -1,6 +1,8 @@
 package headfirst.factory.simple;
 
 public class CakeStore {
+    public CakeStore() {
+    }
 
     /**
      * 老的做法 依赖于具体的实现类 如 奶油蛋糕
@@ -20,6 +22,11 @@ public class CakeStore {
         }
     }
 
+    private SimpleCakeFactory simpleCakeFactory;
+    //可以动态切换工厂
+    public CakeStore(SimpleCakeFactory simpleCakeFactory) {
+        this.simpleCakeFactory = simpleCakeFactory;
+    }
 
     /**
      * 通过一个外部的工厂来创建，仅需依赖抽象Cake 而不用依赖具体实现
@@ -27,6 +34,6 @@ public class CakeStore {
      * @return
      */
     public Cake makeCakeFactory(int cakeType) {
-        return SimpleCakeFactory.makeCakeFactory(cakeType);
+        return simpleCakeFactory.makeCakeFactory(cakeType);
     }
 }
