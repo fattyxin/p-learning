@@ -40,7 +40,7 @@ public abstract class Cake {
 
     @Override
     public String toString() {
-        return "From Cake:\n I am " + this.getName() + ", my toppings " + this.getToppings();
+        return "\n From Cake:\n I am " + this.getName() + ", my toppings " + this.getToppings();
     }
 
     public String getName() {

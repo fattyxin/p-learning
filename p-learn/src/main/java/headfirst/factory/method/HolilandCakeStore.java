@@ -6,6 +6,12 @@ package headfirst.factory.method;
 public class HolilandCakeStore  extends CakeStore{
     @Override
     protected Cake createCake(int type) {
-        return null;
+        if (CakeTypeEnum.CREAM_CAKE.getType() == type) {
+            return new HolilandCreamCake();
+        } else if (CakeTypeEnum.FRUIT_CAKE.getType() == type) {
+            return new HolilandFruitCake();
+        } else {
+            return null;
+        }
     }
 }
