@@ -16,8 +16,21 @@ public class AbstractFactoryMain {
      * 两家 KFC 一个 北京 一个上海 分别从 北京 和上海的养鸡场 购买材料
      *
      * 炸鸡制作：准备材料、炸、加香料、打包。
+     *
+     * 确实例子不太合理  主要看 养鸡场。。。
      */
     public static void main(String[] args) {
+        //找到一家北京fkc
+        KFCStore bjkfc = new BJKFCStore();
+        //香辣味炸鸡
+        FiredChicken firedChicken = bjkfc.orderFiredChicken(FiredChickenTypeEnum.Spicy_Flavor.getType());
+        firedChicken.descc();
+
+        //找到一家上海fkc
+        KFCStore shkfc = new SHKFCStore();
+        //原味炸鸡
+        FiredChicken firedChicken1 = shkfc.orderFiredChicken(FiredChickenTypeEnum.Original_Taste.getType());
+        firedChicken1.descc();
 
     }
 }

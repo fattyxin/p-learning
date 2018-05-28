@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * created by qinwanxin on 2018/5/25 19:32
+ * created by qinwanxin on 2018/5/28 9:47
  */
-public class BJFiredChicken implements FiredChicken {
+public class SHFiredChicken implements FiredChicken{
     private ChickenFarm chickenFarm;
 
-    public BJFiredChicken(ChickenFarm chickenFarm) {
+    public SHFiredChicken(ChickenFarm chickenFarm) {
         this.chickenFarm = chickenFarm;
     }
 
@@ -17,17 +17,17 @@ public class BJFiredChicken implements FiredChicken {
 
     @Override
     public void prepare() {
-        System.out.println("BJFiredChicken start to prepare");
-        chickenList.add(chickenFarm.createChickenWings());
+        System.out.println("SHFiredChicken start to prepare");
         chickenList.add(chickenFarm.createChickenWings());
         chickenList.add(chickenFarm.createDrumsticks());
-        System.out.println("BJFiredChicken end to prepare");
+        chickenList.add(chickenFarm.createDrumsticks());
+        System.out.println("SHFiredChicken end to prepare");
 
     }
 
     @Override
     public void fry() {
-        System.out.println("BJFiredChicken fry 5 min ");
+        System.out.println("SHFiredChicken fry 6 min ");
     }
 
     @Override
@@ -38,18 +38,18 @@ public class BJFiredChicken implements FiredChicken {
         } else {
             top = "nothing";
         }
-        System.out.println("BJFiredChicken addTops " + top);
+        System.out.println("SHFiredChicken addTops " + top);
     }
 
     @Override
     public void box() {
-        System.out.println("BJFiredChicken boxed");
+        System.out.println("SHFiredChicken boxed");
 
     }
 
     @Override
     public void descc() {
-        System.out.println("I am BJFiredChicken! There are 2*wings and one drumsticks here");
+        System.out.println("I am SHFiredChicken! There are 2*drumsticksand one wings  here");
         for (Chicken chicken : chickenList) {
             System.out.println(chicken.getName());
         }

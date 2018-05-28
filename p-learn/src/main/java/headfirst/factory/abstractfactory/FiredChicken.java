@@ -17,7 +17,7 @@ public interface FiredChicken {
     /**
      * 加调料
      */
-    void addTops();
+    void addTops(int type);
 
     /**
      * 打包

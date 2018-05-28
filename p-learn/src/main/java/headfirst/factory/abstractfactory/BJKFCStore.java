@@ -5,7 +5,9 @@ package headfirst.factory.abstractfactory;
  */
 public class BJKFCStore extends KFCStore {
     @Override
-    protected FiredChicken createFiredChicken(int type) {
-        return null;
+    protected FiredChicken createFiredChicken() {
+        //从跑步鸡养殖场购买原料
+        RunChickenFarm runChickenFarm = new RunChickenFarm();
+        return  new BJFiredChicken(runChickenFarm);
     }
 }

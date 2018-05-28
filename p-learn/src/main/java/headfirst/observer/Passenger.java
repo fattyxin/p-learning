@@ -6,15 +6,15 @@ package headfirst.observer;
 public class Passenger implements Observer{
    private String trainNum2Take;
     public Passenger(Subject subject){
-        subject.addObserver(this);
+//        subject.addObserver(this);
     }
 
     @Override
     public void update(Subject subject) {
         if(subject instanceof TrainVoiceSubject){
-            if(trainNum2Take.equalsIgnoreCase()){
-
-            }
+//            if(trainNum2Take.equalsIgnoreCase()){
+//
+//            }
         }
     }
 

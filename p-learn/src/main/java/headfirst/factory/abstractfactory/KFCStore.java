@@ -5,18 +5,17 @@ package headfirst.factory.abstractfactory;
  */
 public abstract class KFCStore {
     FiredChicken orderFiredChicken(int type){
-        FiredChicken firedChicken = createFiredChicken(type);
+        FiredChicken firedChicken = createFiredChicken();
         firedChicken.prepare();
         firedChicken.fry();
-        firedChicken.addTops();
+        firedChicken.addTops(type);
         firedChicken.box();
         return firedChicken;
     }
 
     /**
      * 根据炸鸡类型 生成炸鸡实体
-     * @param type 炸鸡类型
      * @return 具体炸鸡
      */
-    protected abstract FiredChicken createFiredChicken(int type);
+    protected abstract FiredChicken createFiredChicken();
 }

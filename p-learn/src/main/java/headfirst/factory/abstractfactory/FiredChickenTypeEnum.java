@@ -5,13 +5,13 @@ package headfirst.factory.abstractfactory;
  */
 public enum FiredChickenTypeEnum {
     /**
-     * 炸鸡腿
+     * 香辣味
      */
-    Drumsticks(1),
+    Spicy_Flavor (1),
     /**
-     * 炸鸡翅
+     * 原味
      */
-    Chicken_Wings(2)
+    Original_Taste (2)
     ;
     private int type;
 
