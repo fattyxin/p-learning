@@ -18,10 +18,10 @@ public class
 
         /**
          *
-         * {"instruction":"SlaveOfNoOne","host":"172.28.66.90","port":6380}(从ip:port) 断开复制关系
-         * {"instruction":"SlaveOfNoOneInDB","host":"172.28.66.90","port":6389} (从ip:port) 断开主从关系
-         * {"instruction":"SlaveOfInDB","slaveHost":"172.28.66.92","slavePort":6387,"masterHost":"172.28.66.88","masterPort":6387} 建立主从关系
-         * {"instruction":"SlaveOf","slaveHost":"172.28.66.92","slavePort":6390,"masterHost":"172.28.66.88","masterPort":6390} 建立复制关系
+         * {"instruction":"SlaveOfNoOne","host":"127.0.0.1","port":6380}(从ip:port) 断开复制关系
+         * {"instruction":"SlaveOfNoOneInDB","host":"127.0.0.1","port":6389} (从ip:port) 断开主从关系
+         * {"instruction":"SlaveOfInDB","slaveHost":"127.0.0.2","slavePort":6387,"masterHost":"127.0.0.1","masterPort":6387} 建立主从关系
+         * {"instruction":"SlaveOf","slaveHost":"127.0.0.2","slavePort":6390,"masterHost":"127.0.0.1","masterPort":6390} 建立复制关系
          */
 
         List<Integer> slavePorts = new ArrayList<Integer>();

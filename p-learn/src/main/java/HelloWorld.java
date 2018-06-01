@@ -24,5 +24,11 @@ public class HelloWorld {
         list1.add(1);
         String s1 = JSON.toJSONString(list1);
         System.out.println(s1.substring(1, s1.length() - 1));
+        
+        
+        Integer int1 = new Integer(888);
+        Integer int2 = null;
+        System.out.println("int1.equals(int2) = " + int1.equals(int2));
+        System.out.println(HelloWorld.class.getName());
     }
 }
