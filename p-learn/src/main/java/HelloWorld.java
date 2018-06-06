@@ -1,6 +1,7 @@
 import com.alibaba.fastjson.JSON;
 
 import java.util.ArrayList;
+import java.util.Hashtable;
 import java.util.List;
 
 /**
@@ -30,5 +31,7 @@ public class HelloWorld {
         Integer int2 = null;
         System.out.println("int1.equals(int2) = " + int1.equals(int2));
         System.out.println(HelloWorld.class.getName());
+        Hashtable hashtable = new Hashtable();
+        hashtable.put(null,"666");
     }
 }
