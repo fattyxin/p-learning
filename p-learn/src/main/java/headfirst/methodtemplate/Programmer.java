@@ -4,7 +4,7 @@ package headfirst.methodtemplate;
  * created by qinwanxin on 2018/6/8 16:19
  */
 public abstract class Programmer {
-    protected final void onDay(){
+    protected final void oneDay(){
         goCompany();
         doSomething();
         eat();

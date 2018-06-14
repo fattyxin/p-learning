@@ -23,7 +23,7 @@ public class MethodTemplateMain {
     public static void main(String[] args) {
         Programmer cp = new CommonProgrammer();
         Programmer kubi = new KubiProgrammer();
-        cp.onDay();
-        kubi.onDay();
+        cp.oneDay();
+        kubi.oneDay();
     }
 }
